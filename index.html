@@ -1,0 +1,76 @@
+<!D0CTYPE html>
+<html>
+
+<div id="top" class="container">
+  <head>
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" id="twitch.css" href="https://sudarsan-chandrasekhar.github.io/twitch.css" /> 
+  </head>
+  <body>
+  <header>
+    <div class="row center">
+      <img class="twitch-logo" src="http://res.cloudinary.com/dbcgztca9/image/upload/v1476982326/Twitch_BlackLogo_teeuhp.png">
+    </div>
+    <p class="flow-text center">Twitch.tv Channels</p>
+  </header>
+</div>
+<main class="container home-content">
+  <section id="search-controls">
+  <div class="row">
+    <div class="col s3 offset-s1 right-align">
+      <a class="dropdown-button btn deep-purple left-align" href="#" data-activates="filter-menu" data-constrainwidth="false">
+        <i class="material-icons">filter_list</i></a>
+      <ul id="filter-menu" class="dropdown-content">
+        <li id="all-filter" class="filter status-filter-all">
+          <a href="#!" class="black-text"><i class="material-icons left">group</i>All</a>
+        </li>
+        <li id="online-filter" class="filter status-filter-online">
+          <a href="#!" class="deep-purple-text"><i class="material-icons left">person</i>Online</a>
+        </li>
+        <li id="offline-filter" class="filter status-filter-offline">
+          <a href="#!" class="grey-text text-darken-2"><i class="material-icons left">person_outline</i>Offline</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col s6 left-align">
+      <div class="input-field">
+        <input id="search-input" type="text" class="deep-purple-text" value="Search for specific Twitch channel">
+      </div>
+    </div>
+  </div>
+  </section>
+  <div id="user-status" class="row">
+    <span id="online"></span>
+    <span id="offline"></span>
+    <span id="closed"></span>
+  </div>
+  <div class="row center-align back-to-top">
+    <a href="#top" class="btn-floating btn-large waves-effect waves-light deep-purple">
+      <i class="material-icons">keyboard_arrow_up</i>
+    </a>
+  </div>
+</main>
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<script src="twitch.js"> </script>
+</body>
+</html>
+<footer class="footer">
+  <div class="container center-align">
+    <div class="footer-text row">
+      <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>Sudarsan Chandrasekhar Code developed using: <a href="http://freecodecamp.com/challenges/zipline-use-the-twitchtv-json-api" target="_blank">Use the Twitch.tv JSON API</a></p>
+    </div>
+	
+    <div class="footer-logos row">
+    
+      <a href="https://www.linkedin.com/in/sudarsan-chandrasekhar-554614b8?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/TylerMoeller" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="http://freecodecamp.com/tylermoeller" target="_blank"><i class="fa fa-fire"></i></a>
+      <a href="http://codepen.io/TylerMoeller/pens/public" target="_blank"><i class="fa fa-codepen"></i></a>
+      <a href="https://tylermoeller.net" target="_blank"><i class="fa fa-wordpress"></i></a>
+    </div>
+  </div>
+</footer>
+
